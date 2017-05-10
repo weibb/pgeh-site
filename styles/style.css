@@ -2,14 +2,19 @@ p {
   color: cornflowerblue;
 }
 
-row bg-container {
-  background-color: blue;
-}
 
 col-md-1 {
   background-color: green;
 }
 
-col-md-10 focus-color-1 {
+.bg-container {
+  background-color: blue;
+}
+
+.focus-color-1 {
   background-color: orange;
+}
+
+.sideline-color-1 {
+  background-color: green;
 }
