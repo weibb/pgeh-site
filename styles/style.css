@@ -2,17 +2,19 @@ p {
   color: cornflowerblue;
 }
 
+/* text outside */
 .header {
   position: absolute;
   left: -8%;
 }
 
+/* content containers */
 .border-area {
-    height: 15vh;
+    height: 10vh;
 }
 
 .bg-container {
-    height: 70vh;
+    height: 80vh;
 }
 
 .content-area {
@@ -22,35 +24,8 @@ p {
   right: 20%;
 }
 
-.focus-bottom-right {
-  position: absolute;
-  right: -8%;
-  bottom: -8%;
-}
-
-.image {
-  height: 50vh;
-  width: 33vw;
-}
-
-.image img {
-  position: absolute;
-  max-height: 100%;
-  max-width: 100%;
-  right: 0%;
-  bottom: 0%;
-}
-
-.transparent-bg {
-  background-color: rgba(255, 0, 0, 0);
-}
-
-.col-md-1 {
-  background-color: green;
-}
-
 .bg-container {
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .focus-color-1 {
@@ -58,6 +33,34 @@ p {
   height: 100%;
 }
 
+.col-md-1 {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .sideline-color-1 {
-  background-color: green;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* image container bottom right */
+.focus-bottom-right {
+  position: absolute;
+  right: -8%;
+  bottom: -8%;
+}
+
+.focus-bottom-right img {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  right: 0%;
+  bottom: 0%;
+  -webkit-mask-image:-webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image:-webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+/* image */
+.image {
+  height: 50vh;
+  width: 33vw;
 }
