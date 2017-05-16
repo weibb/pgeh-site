@@ -1,4 +1,4 @@
-/* styling: fonts */
+/* fonts */
 body { padding-top: 70px;
 }
 
@@ -7,8 +7,33 @@ p {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
 }
+
+/* header */
+.header {
+    font-size: 30px;
+    text-align: right;
+}
+
+/* image global */
+.image {
+  height: 50vh;
+  width: 33vw;
+}
+
+
+.focus-bottom-right img {
+  max-height: 100%;
+  max-width: 100%;
+  right: 0%;
+  bottom: 0%;
+  -webkit-mask-image:-webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image:-webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+/* navbar */
 
 .navbar {
   min-height: 50px;
@@ -29,12 +54,6 @@ h1 {
   padding: 1em;
 }
 
-/* text outside */
-.header {
-  position: absolute;
-  left: -8%;
-}
-
 /* content containers */
 .border-area {
     height: 10vh;
@@ -46,14 +65,18 @@ h1 {
 
 .content-area {
   width: 70%;
-  position: absolute;
-  bottom: 10%;
   right: 20%;
-=======
+  text-align: justify;
 }
 
 .bg-container {
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 768px) {
+    .content-padding {
+        height: 40%;
+    }
 }
 
 .focus-color-1 {
@@ -69,26 +92,31 @@ h1 {
   background-color: rgba(0, 0, 0, 0);
 }
 
-
 /* image container bottom right */
-.focus-bottom-right {
-  position: absolute;
-  right: -8%;
-  bottom: -8%;
+
+@media (max-width: 767px) {
+    .focus-bottom-right {
+      max-width: 200px;
+      bottom: 0%;
+    }
 }
 
-.focus-bottom-right img {
-  position: absolute;
-  max-height: 100%;
-  max-width: 100%;
-  right: 0%;
-  bottom: 0%;
-  -webkit-mask-image:-webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-  mask-image:-webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-}
+@media (min-width: 768px) {
+    .focus-bottom-right {
+      position: absolute;
+      max-width: 100%;
+      right: -4vh;
+      bottom: -10vh;
+    }
 
-/* image */
-.image {
-  height: 50vh;
-  width: 33vw;
+    .header {
+    font-size: 36px;
+      position: absolute;
+      left: -8%;
+      text-align: left;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
 }
