@@ -40,6 +40,9 @@ h1 {
   margin-bottom: 20px;
   padding: 1em;
   border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
 }
 
 .navbar ul {
@@ -54,6 +57,21 @@ h1 {
   padding: 1em;
 }
 
+<<<<<<< edc98227bfc7011ef38ed39e4cdedff77003e195
+=======
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+/* text outside */
+.header {
+  position: absolute;
+  left: -8%;
+}
+
+>>>>>>> Add gallery
 /* content containers */
 .border-area {
     height: 10vh;
