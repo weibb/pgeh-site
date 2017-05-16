@@ -71,7 +71,13 @@ h1 {
   left: -8%;
 }
 
->>>>>>> Add gallery
+/* gallery */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
 /* content containers */
 .border-area {
     height: 10vh;
