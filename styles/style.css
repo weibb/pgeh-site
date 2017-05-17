@@ -5,6 +5,8 @@ body {
 }
 p {
     font-family: 'Lora', serif;
+    font-size: 2rem;
+    padding: 0 0 50px 0;
 }
 h1 {
     font-family: 'Lato', sans-serif;
@@ -14,18 +16,19 @@ h1 {
 
 .header {
     font-size: 30px;
+    padding: 1em 0 0 0;
     text-align: right;
 }
 /* image global */
 
 .image {
-    height: 50vh;
-    width: 33vw;
+    padding: 25%;
 }
+
 .focus-bottom-right img {
     max-height: 100%;
     max-width: 100%;
-    right: 0%;
+    right: 50%;
     bottom: 0%;
     -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
     mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
@@ -51,12 +54,6 @@ h1 {
     display: inline;
     padding: 1em;
 }
-/* text outside */
-
-.header {
-    position: absolute;
-    left: -8%;
-}
 /* gallery */
 
 .carousel-inner > .item > img,
@@ -70,9 +67,7 @@ h1 {
 .border-area {
     height: 20vh;
 }
-.bg-container {
-    height: 80vh;
-}
+
 .content-area {
     width: 70%;
     right: 20%;
@@ -81,10 +76,8 @@ h1 {
 .bg-container {
     background-color: rgba(0, 0, 0, 0);
 }
-@media (min-width: 768px) {
-    .content-padding {
-        height: 40%;
-    }
+.content-padding {
+    height: 5vh;
 }
 .focus-color-1 {
     background-color: orange;
@@ -102,10 +95,7 @@ h1 {
     padding: 0;
 }
 @media (max-width: 767px) {
-    .focus-bottom-right {
-        max-width: 200px;
-        bottom: 0%;
-    }
+
     #myCarousel .item {
         height: 100vh;
         width: auto;
@@ -114,7 +104,7 @@ h1 {
         height: 100vh;
         width: auto;
         max-width: 200%;
-        transform-origin: 0.5 0.5;
+        transform-origin: 0.5 0.5s;
     }
 }
 @media (min-width: 768px) {
@@ -137,16 +127,35 @@ h1 {
     .right .carousel-control {
         background-image: none;
     }
+    .bg-container {
+        height: 80vh;
+    }
     .header {
         font-size: 36px;
         position: absolute;
-        left: -8%;
+        left: -6vh;
         text-align: left;
     }
     h1 {
         font-size: 1em;
     }
+
+    p {
+        font-family: 'Lora', serif;
+        font-size: 1em;
+        padding: 0 0 50px 0;
+    }
     .navbar {
         height: 10vh;
+    }
+
+    .image {
+        height: 50vh;
+        width: 33vw;
+        padding: 0;
+    }
+
+    .content-padding {
+        height: 40%;
     }
 }
