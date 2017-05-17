@@ -80,7 +80,7 @@ h1 {
 
 /* content containers */
 .border-area {
-    height: 10vh;
+    height: 20vh;
 }
 
 .bg-container {
@@ -123,6 +123,17 @@ h1 {
       max-width: 200px;
       bottom: 0%;
     }
+    #myCarousel .item {
+        height: 100vh;
+        width: auto;
+    }
+    #myCarousel .item img {
+
+        height: 100vh;
+        width: auto;
+        max-width: 200%;
+        transform-origin: 50% 50%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -130,7 +141,7 @@ h1 {
       position: absolute;
       max-width: 100%;
       right: -4vh;
-      bottom: -10vh;
+      bottom: -4vh;
     }
 
     .header {
@@ -142,5 +153,8 @@ h1 {
 
     h1 {
         font-size: 1em;
+    }
+    .navbar {
+        height: 10vh;
     }
 }
