@@ -65,7 +65,6 @@ h1 {
 /* content containers */
 .carousel-control, .carousel-control:hover, .carousel-control:focus, .carousel-control:link {
     display: flex;
-    justify-content: center;
     align-items: center;
     opacity: 1;
     background-image: none;
@@ -78,6 +77,22 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #999999;
+}
+
+.carousel-control.left {
+    justify-content: flex-start;
+}
+
+.carousel-control.right {
+    justify-content: flex-end;
+}
+
+.arrow-left{
+    margin-left: -50px;
+}
+
+.arrow-right{
+    margin-right: -100px;
 }
 
 .arrow-left-image, .arrow-right-image {
@@ -93,7 +108,7 @@ h1 {
 
 
 .border-area {
-    height: 20vh;
+    height: 12vh;
 }
 
 .content-area {
