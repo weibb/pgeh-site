@@ -63,6 +63,34 @@ h1 {
     object-fit: cover;
 }
 /* content containers */
+.carousel-control, .carousel-control:hover, .carousel-control:focus, .carousel-control:link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    background-image: none;
+}
+
+.arrow-left, .arrow-right {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #999999;
+}
+
+.arrow-left-image, .arrow-right-image {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
+.arrow-left-image img, .arrow-right-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 .border-area {
     height: 20vh;
