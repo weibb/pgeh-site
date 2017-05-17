@@ -13,7 +13,10 @@ h1 {
     font-size: 1em;
 }
 /* header */
-
+ul.nav.navbar-nav {
+    background-color: #ffffff;
+    text-align: right;
+}
 .header {
     font-size: 30px;
     padding: 1em 0 0 0;
@@ -52,7 +55,8 @@ h1 {
 }
 .navbar li {
     display: inline;
-    padding: 1em;
+    padding: 1em 0;
+    font-size: 0.8em;
 }
 /* gallery */
 
@@ -201,4 +205,10 @@ h1 {
     .content-padding {
         height: 40%;
     }
+
+    ul.nav.navbar-nav {
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 1em;
+    }
+
 }
