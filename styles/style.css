@@ -66,7 +66,7 @@ ul.nav.navbar-nav {
     margin: auto;
     object-fit: cover;
 }
-/* content containers */
+
 .carousel-control, .carousel-control:hover, .carousel-control:focus, .carousel-control:link {
     display: flex;
     align-items: center;
@@ -110,31 +110,72 @@ ul.nav.navbar-nav {
     max-height: 100%;
 }
 
-
+/* content containers */
 .border-area {
     height: 12vh;
 }
 
 .content-area {
+    display: flex;
     width: 70%;
     right: 20%;
     text-align: justify;
+    padding: 0;
+    margin: 0;
 }
+
 .bg-container {
+    display: flex;
     background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
 }
+
 .content-padding {
     height: 5vh;
 }
+
 .focus-color-1 {
+    display: flex;
     background-color: orange;
     height: 100%;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .col-md-1 {
     background-color: rgba(0, 0, 0, 0);
 }
+
 .sideline-color-1 {
     background-color: rgba(0, 0, 0, 0);
+}
+
+.four-a {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+
+.four-b {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+.four-c {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+
+.four-d {
+    width: 50%;
+    height: 50%;
+    background-color: black;
 }
 /* image container bottom right */
 
