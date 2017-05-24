@@ -5,12 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/aos.css">
         <link rel="stylesheet" href="styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="scripts/jquery.snapscroll.js"></script>
         <script src="scripts/jquery.scrollto.js"></script>
+        <script src="scripts/aos.js"></script>
         <script src="scripts/index.js"></script>
     </head>
     <body>
@@ -139,10 +141,10 @@
                     <div class="row bg-container">
                         <div class="col-sm-1 col-md-1 sideline-color-1"></div>
                         <div class="col-sm-10 col-md-10 focus-color-1">
-                            <div class="four-a">A</div>
-                            <div class="four-b">B</div>
-                            <div class="four-c">C</div>
-                            <div class="four-d">D</div>
+                            <div class="four-a" data-aos="fade-right">A</div>
+                            <div class="four-b" data-aos="fade-left">B</div>
+                            <div class="four-c" data-aos="fade-right">C</div>
+                            <div class="four-d" data-aos="fade-left">D</div>
                         </div>
                         <div class="col-sm-1 col-md-1 sideline-color-1">
                         </div>
@@ -154,4 +156,7 @@
             </li>
         </ul>
     </body>
+    <script>
+        AOS.init();
+    </script>
 </html>
