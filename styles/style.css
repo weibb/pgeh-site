@@ -3,6 +3,18 @@
 body {
     padding-top: 70px;
 }
+
+.docScroller {
+    width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: mandatory;
+      /* older spec implementation */
+      scroll-snap-destination: 50% 100%;
+      scroll-snap-points-y: repeat(100%);
+}
 p {
     font-family: 'Lora', serif;
     font-size: 2rem;
