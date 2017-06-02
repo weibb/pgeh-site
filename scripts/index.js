@@ -1,11 +1,16 @@
 
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  $(".intro").css("transform","translateY(" +  (scroll/-2)  + "px)");
+  $(".parallax").css("transform","translateY(" +  (scroll/-2)  + "px)");
 });
+
+AOS.init({
+ duration: 1200
+});
+
 // usage: $('.container').snapscroll({'scrollOptions':{'axis':'y'}});
 // for scrollOptions refer to https://github.com/flesler/jquery.scrollTo
-(function($, window, document, undefined_) {
+/* (function($, window, document, undefined_) {
   var Plugin, defaults, pluginName;
   pluginName = "snapscroll";
   defaults = {
@@ -105,3 +110,4 @@ $(function() {
   $(".docScroller").snapscroll();
 
 });
+*/

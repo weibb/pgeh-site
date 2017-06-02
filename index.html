@@ -28,22 +28,23 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul  class="nav navbar-nav">
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">Clinic</a></li>
                     <li><a href="#">Research</a></li>
-                    <li><a href="#">Clinical</a></li>
+                    <li><a href="#">Teaching</a></li>
                     <li><a href="#">Administrative</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Community Service</a></li>
                     <li><a href="#">Philanthropic Support</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <ul class="docScroller">
+        <ul>
             <li>
                 <div class="container-fluid">
                     <div class="row bg-container">
                         <div class="col-sm-1 col-md-1 sideline-color-1"></div>
                         <div class="col-sm-10 col-md-10 focus-color-1">
-                            <div class="header intro">
+                            <div class="header" data-aos="hide-1">
                                 <h1>My First Bootstrap Page</h1>
                             </div>
                             <div class ="row content-padding"></div>
@@ -57,7 +58,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-0 col-md-8 sideline-color-1"</div>
-                        <div class="col-sm-12 col-md-4 focus-bottom-right image intro">
+                        <div class="col-sm-12 col-md-4 focus-bottom-right image" data-aos="fade-right">
                             <img src="assets/head.png">
                         </div>
                     </div>
@@ -113,13 +114,13 @@
                                 </div>
                             </div>
                             <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" data-aos="fade-right">
                             <div class="arrow-left">
                                 <img src="./assets/gallery_arrow_left.png" class="arrow-left-image">
                             </div>
                             <span class="sr-only">Previous</span>
                             </a>
-                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" data-aos="fade-right">
                                 <div class="arrow-right">
                                     <img src="./assets/gallery_arrow_right.png" class="arrow-right-image">
                                 </div>
@@ -157,6 +158,11 @@
         </ul>
     </body>
     <script>
-        AOS.init();
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
     </script>
 </html>
