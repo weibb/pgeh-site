@@ -4,9 +4,7 @@ $(window).scroll(function() {
   $(".parallax").css("transform","translateY(" +  (scroll/-2)  + "px)");
 });
 
-AOS.init({
- duration: 1200
-});
+
 
 // usage: $('.container').snapscroll({'scrollOptions':{'axis':'y'}});
 // for scrollOptions refer to https://github.com/flesler/jquery.scrollTo

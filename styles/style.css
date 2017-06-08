@@ -212,16 +212,7 @@ ul.nav.navbar-nav {
     height: 50%;
     background-color: black;
 }
-/* parallax */
-[data-aos="hide-1"] {
-  transform: traslatY(0px);
-  opacity: 1;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: translateY(-120px);
-    opacity: 0;
-  }
-}
+
 
 /*
 .parallax {
@@ -315,4 +306,15 @@ ul.nav.navbar-nav {
         font-size: 1em;
     }
 
+}
+
+/* parallax */
+[data-aos="hide1"] {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-property: opacity, transform;
+}
+[data-aos="hide1"].aos-animate {
+  opacity: 0;
+  transform: translateY(-120px);
 }
