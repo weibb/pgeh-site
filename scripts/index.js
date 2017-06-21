@@ -1,3 +1,7 @@
 $( "#caseReport" ).click(function() {
-  alert( "Hey look it works" );
+    sortType( caseReport );
 });
+
+const sortType = function sortType( tag ) {
+
+};
