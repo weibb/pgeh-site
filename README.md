@@ -27,8 +27,30 @@ challenge.start();
 
 # Configuration Object
 
-1. **redsPerBlue** *int* - number of reds needed to increment blue counter
-1. **objective** *int* - number of blues needed to win game
+1. **id** *string* - unique id for publication
+1. **category** *array* - array of tag strings, include 'all' tag to each publication for initial or resent loads.
+    1. **all** *string*
+    1. **basic** *string*
+    1. **clinical** *string*
+    1. **engineering** *string*
+1. **publication type** *array* - array of tag strings, include 'all' tag to each publication for initial or resent loads.
+    1. **all** *string*
+    1. **original research** *string*
+    1. **collaborative research** *string*
+    1. **case reports** *string*
+    1. **book chapters** *string*
+    1. **abstracts** *string*
+    1. **posters** *string*
+    1. **proceeding reports** *string*
+    1. **patents** *string*
+1. **title** *string* - title of publication.
+1. **link** *string* - url of publication.
+1. **authors** *array* - array of author names with optional categories.
+    1. **first author** *object*
+    1. **second author** *object*
+    1. **editor** *object*
+1. **date** *int* - publication year.
+1. **image** *string* - url of image (optional).
 
 # State Object
 
