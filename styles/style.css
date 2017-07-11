@@ -44,7 +44,7 @@ h1 {
     font-size: 6vw;
 }
 
-.header h2 {
+.right-header h2, .left-header h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 5vw;
@@ -143,18 +143,17 @@ ul.nav.navbar-nav {
     left: 0;
 }
 
-.image-bottom-right {
+.image-top-right {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 65%;
-    height: auto;
+    width: 70%;
+    height: 45%;
     float: right;
     position: relative;
     z-index: 1;
-    margin-left: -15vw;
-    margin-top: 30vh;
+    margin-left: -25%;
 }
 
 .image-bottom-right img {
@@ -196,19 +195,29 @@ ul.nav.navbar-nav {
     margin-left: -25%;
 }
 
-.text-container.top-left {
-    width: 60%;
+.text-container.bottom-left {
+    width: 65%;
     height: 45%;
-    height: auto;
     position: relative;
     z-index: 100;
-    float: left;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+    margin-top: 25%;
+    margin-left: 0;
 }
 
-.header {
-    width: 100%;
+.left-header {
+    width: auto;
     height: auto;
     position: absolute;
+}
+
+.right-header {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right:8%;
 }
 
 .content-text {
@@ -225,7 +234,7 @@ ul.nav.navbar-nav {
 }
 
 /* front */
-.image-top-right {
+.image-front {
     display: inline;
     justify-content: center;
     align-items: center;
