@@ -28,18 +28,18 @@ ul {
 p {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
     padding: 0;
     color: rgba(255, 255, 255, 1);
 }
 
-.content-text p {
+/* .content-text p {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     padding: 0;
     color: rgba(255, 255, 255, 1);
-}
+}*/
 
 
 h1 {
@@ -80,15 +80,16 @@ h3 {
 
 /* navbar */
 #menu {
-	position:fixed;
-	top:0px;
-	width:100%;
+    margin: 0 auto;
+	position: fixed;
+	top: 0px;
     display: inline;
 }
 
 .collapse.navbar-collapse {
     margin: 0;
     padding:0;
+    width: inherit;
 }
 
 .navbar {
@@ -165,7 +166,7 @@ ul.nav.navbar-nav {
     margin-left: -25%;
 }
 
-.image-bottom-right img {
+.image-top-right img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
@@ -258,7 +259,7 @@ ul.nav.navbar-nav {
     margin-top: -75vh;
 }
 
-.image-top-right img {
+.image-front img {
     display: flex;
     height: 100%;
     width: 100%;
