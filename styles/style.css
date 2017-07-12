@@ -317,3 +317,13 @@ ul.nav.navbar-nav {
   opacity: 0;
   transform: translateY(-120px);
 }
+
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+}
