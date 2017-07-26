@@ -33,6 +33,7 @@ p {
     color: rgba(255, 255, 255, 1);
 }
 
+
 /* .content-text p {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
@@ -51,6 +52,17 @@ h1 {
     padding: 0;
     margin: 0;
     font-size: 6vw;
+}
+
+.header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 1);
+    line-height: .9em;
+    padding: 0;
+    margin: 0;
+    font-size: 72;
 }
 
 .right-header h2, .left-header h2 {
@@ -138,8 +150,8 @@ ul.nav.navbar-nav {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 70%;
-    height: 45%;
+    width: 65%;
+    height: 55%;
     float: left;
     position: relative;
     z-index: 1;
@@ -158,8 +170,8 @@ ul.nav.navbar-nav {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 70%;
-    height: 45%;
+    width: 65%;
+    height: 55%;
     float: right;
     position: relative;
     z-index: 1;
@@ -178,7 +190,7 @@ ul.nav.navbar-nav {
 .box {
     width: 100%;
     height: 100%;
-    margin: 0 0 8em 0;
+    margin: 0 0 14rem 0;
     display: block;
 }
 
@@ -186,7 +198,7 @@ ul.nav.navbar-nav {
     margin: 0 8%;
     display: flex;
     width: 84%;
-    height: auto;
+    height: 85vh;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
@@ -195,7 +207,7 @@ ul.nav.navbar-nav {
 
 .text-container.bottom-right {
     width: 65%;
-    height: 45%;
+    height: 55%;
     position: relative;
     z-index: 100;
     vertical-align: middle;
@@ -207,7 +219,7 @@ ul.nav.navbar-nav {
 
 .text-container.bottom-left {
     width: 65%;
-    height: 45%;
+    height: 55%;
     position: relative;
     z-index: 100;
     vertical-align: middle;
@@ -234,7 +246,7 @@ ul.nav.navbar-nav {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 3em;
+    padding: 6rem;
     background-color: #3438D8;
 }
 
@@ -243,7 +255,7 @@ ul.nav.navbar-nav {
     margin: 0;
 }
 
-/* front */
+
 .image-front {
     display: inline;
     justify-content: center;
@@ -265,6 +277,13 @@ ul.nav.navbar-nav {
     width: 100%;
 }
 
+#front-box{
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0 16rem 0;
+    display: block;
+    top: -100vh;
+}
 #front {
     margin: 0 8%;
     display: flex;
@@ -303,9 +322,61 @@ ul.nav.navbar-nav {
     z-index: 2;
 }
 
+/* front */
+.header {
+    width: auto;
+    height: auto;
+    padding: 40vh 0 0 8vw;
+    position: relative;
+    z-index: 2;
+}
 
+.sub-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
 
+.sub-text {
+    width: 60%;
+    height: auto;
+    margin: 14vh 10rem 5vh 5rem;
+    float: right;
+}
 
+.sub-left {
+    width: 30%;
+    height: auto;
+    margin: 14vh 10rem 5vh 5rem;
+    float: left;
+}
+
+.sub-content p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0;
+    color: #000;
+}
+
+#hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#hero-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
 
 /* parallax */
 [data-aos="hide1"] {
