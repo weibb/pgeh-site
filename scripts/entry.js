@@ -72,7 +72,7 @@ const pubs = [
             },
         ],
         category: ['clinical'],
-        type: ['collaborativeResearch', 'abstract'],
+        type: ['collaborativeResearch', 'abstract', 'caseReport'],
         link: 'http://google.com',
         date: '2015',
         image: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Circle_Logo.svg/1024px-Circle_Logo.svg.png',
