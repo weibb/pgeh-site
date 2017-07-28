@@ -11,7 +11,7 @@ const sortType = function sortType( tag ) {
         }
         else {
             for( let j = 0; j < pub.type.length; j++) {
-                if( tag === pub.type[ i ] ) {
+                if( tag === pub.type[ j ] ) {
                     matches.push( pub.id );
                 }
             }
