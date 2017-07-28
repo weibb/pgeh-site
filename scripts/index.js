@@ -12,15 +12,17 @@ $(window).scroll(
     }
     this.previousTop = currentTop;
     });
-
+/*
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".right-header").each(function() {
       /* Check the location of each desired element */
+/*
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
       /* If the element is completely within bounds of the window, fade it in */
+/*
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
       } else { //object goes out of view (scrolling up)
@@ -29,9 +31,11 @@ $(window).on("load",function() {
     });
     $(".left-header").each(function() {
       /* Check the location of each desired element */
+/*
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
       /* If the element is completely within bounds of the window, fade it in */
+/*
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
       } else { //object goes out of view (scrolling up)
@@ -40,9 +44,11 @@ $(window).on("load",function() {
     });
     $(".image-top-left").each(function() {
       /* Check the location of each desired element */
+/*
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
       /* If the element is completely within bounds of the window, fade it in */
+/*
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
       } else { //object goes out of view (scrolling up)
@@ -51,9 +57,11 @@ $(window).on("load",function() {
     });
     $(".image-top-right").each(function() {
       /* Check the location of each desired element */
+/*
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
       /* If the element is completely within bounds of the window, fade it in */
+/*
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
       } else { //object goes out of view (scrolling up)
@@ -62,9 +70,11 @@ $(window).on("load",function() {
     });
     $(".content-text").each(function() {
       /* Check the location of each desired element */
+/*
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
       /* If the element is completely within bounds of the window, fade it in */
+/*
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
       } else { //object goes out of view (scrolling up)
@@ -74,4 +84,4 @@ $(window).on("load",function() {
   }).scroll(); //invoke scroll-handler on page-load
 });
 
-    $(document).ready(main);
+    $(document).ready(main);*/
