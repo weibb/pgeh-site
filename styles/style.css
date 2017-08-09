@@ -139,50 +139,43 @@ ul.nav.navbar-nav {
 }
 
 /* image global */
-
-.image-container {
-    padding: 0;
+.image-container-left {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    width: 52vw;
+    height: 52vh;
     z-index: 1;
 }
 
-.image-top-left {
+.image-container-right {
+    position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
-    width: 65%;
-    height: 55%;
+    width: 52vw;
+    height: 52vh;
+    z-index: 1;
+    right: 8%;
+}
+
+.image-top {
+    display: inline;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
     float: left;
     position: relative;
     z-index: 1;
+    object-fit: cover;
+    object-position: center;
 }
 
-.image-top-left img {
+.image-top img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-    top: 0;
-    left: 0;
 }
 
-.image-top-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 65%;
-    height: 55%;
-    float: right;
-    position: relative;
-    z-index: 1;
-    margin-left: -25%;
-}
-
-.image-top-right img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
 
 
 /* content containers */
@@ -190,7 +183,7 @@ ul.nav.navbar-nav {
 .box {
     width: 100%;
     height: 100%;
-    margin: 0 0 6rem 0;
+    margin: 0 0 14rem 0;
     display: block;
 }
 
@@ -198,17 +191,11 @@ ul.nav.navbar-nav {
     margin: 0 8%;
     display: flex;
     width: 84%;
-    height: 70rem;
+    height: auto;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0;
-}
-
-.image-container {
-    width: inherit;
-    height: auto;
-    position: absolute;
 }
 
 .left-header {
@@ -225,20 +212,20 @@ ul.nav.navbar-nav {
 }
 
 .text-container.bottom-right {
-    width: 65%;
-    height: 55%;
+    width: 50vw;
+    height: 50vh;
     position: relative;
     z-index: 100;
     vertical-align: middle;
     display: inline-block;
     float: right;
     margin-top: 20%;
-    margin-left: 35%;
+    margin-left: 40%;
 }
 
 .text-container.bottom-left {
-    width: 65%;
-    height: 55%;
+    width: 50vw;
+    height: 50vh;
     position: relative;
     z-index: 100;
     vertical-align: middle;
@@ -395,6 +382,109 @@ ul.nav.navbar-nav {
 [data-aos="hide1"].aos-animate {
   opacity: 0;
   transform: translateY(-120px);
+}
+
+@media all and (max-width: 888px){
+    .navbar-header {
+      float: none;
+    }
+    .navbar-left,.navbar-right {
+      float: none !important;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
+    }
+
+    .image-container-left {
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        width: 84vw;
+        height: 52vh;
+        z-index: 1;
+    }
+
+    .image-container-right {
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        width: 84vw;
+        height: 52vh;
+        z-index: 1;
+        left: 8%;
+    }
+
+    .text-container.bottom-right{
+        width: 84vw;
+        height: 50vh;
+        position: relative;
+        z-index: 100;
+        vertical-align: middle;
+        display: inline-block;
+        float: right;
+        margin-top: 51vh;
+        margin-left: 0;
+    }
+
+    .text-container.bottom-left{
+        width: 84vw;
+        height: 50vh;
+        position: relative;
+        z-index: 100;
+        vertical-align: middle;
+        display: inline-block;
+        float: right;
+        margin-top: 51vh;
+        margin-left: 0;
+    }
+
+    .sub-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .sub-text {
+        width: 70%;
+        text-align: left;
+        margin: 10vh auto;
+        height: auto;
+        float: right;
+    }
+
+    .sub-left {
+        width: 70%;
+        height: auto;
+        margin: 10vh auto;
+        float: left;
+    }
+
 }
 
 

@@ -10,14 +10,11 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/aos.css">
+        <link rel="stylesheet" href="aos-master/dist/aos.css">
         <link rel="stylesheet" href="styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Raleway:700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="scripts/aos.js"></script>
-        <script src="scripts/index.js"></script>
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -78,8 +75,16 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/index.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="aos-master/dist/aos.js"></script>
+        <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 1200,
+            })
+
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -90,5 +95,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
     </body>
 </html>
