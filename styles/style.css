@@ -510,6 +510,7 @@ ul.nav.navbar-nav {
         display: block;
         width: 100%;
         position: absolute;
+        height: 100vh !important;
     }
 
     .navbar li {
@@ -679,4 +680,73 @@ ul.nav.navbar-nav {
     .right-header, .left-header {
         width: 100%;
     }
+}
+///////////////////
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  height: 3px;
+  width: 30px;
+  background-color: #777;
+  transition: all .2s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.navbar-default .navbar-toggle .icon-bar + .icon-bar {
+}
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  -o-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar:last-child {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+/*
+.navbar-default .navbar-collapse {
+  transition: all .5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  z-index: 99;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+}
+*/
+.navbar-default .navbar-collapse.collapse.in {
+  bottom: 0;
+}
+
+button, button:hover, .navbar-toggle:hover, .navbar-toggle.collapsed:hover {
+        background-color: rgba(255, 0, 0, 0) !important;
+        border: 0;
+        outline: none;
+}
+
+.navbar-nav {
+    left: 0;
+}
+
+.no-transition {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
 }
