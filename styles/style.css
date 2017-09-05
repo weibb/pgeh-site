@@ -310,7 +310,7 @@ ul.nav.navbar-nav {
     padding: 0;
     background:
     rgba(52, 56, 216, 0.8)
-    url('/Users/weihann1/Documents/Brinkbit/wos/pgeh-site/assets/frontimg.png') no-repeat center;
+    url('../assets/frontimg.png') no-repeat center;
     background-size: cover;
 }
 
@@ -375,10 +375,10 @@ ul.nav.navbar-nav {
     margin: 0 auto 0 15%;
 }
 
-.header {
+.sub-content .header {
     width: auto;
     height: auto;
-    margin: 0 0 3rem 0;
+    margin: 0 0 6rem 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
