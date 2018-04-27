@@ -97,11 +97,12 @@ h4 {
 }
 
 .CTA {
+    font-family: 'Karla', sans-serif;
     text-decoration: underline;
     color: rgba(255, 255, 255, 1);
 }
 
-.CTA a:hover {
+a:hover.CTA  {
     text-decoration: underline;
     color: rgba(255, 255, 255, .5);
 }
@@ -239,7 +240,7 @@ ul.nav.navbar-nav {
 .box {
     width: 100%;
     height: 100%;
-    margin: 0 0 14rem 0;
+    padding: 7rem 0;
     display: block;
 }
 
@@ -312,10 +313,6 @@ ul.nav.navbar-nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-}
-
-.CTA-right {
-  float: right;
 }
 
 /**************************************** front ****************************************/
@@ -398,6 +395,57 @@ ul.nav.navbar-nav {
     align-self: flex-end;
     background-color: rgba(255, 255, 255, 1);
     z-index: 2;
+}
+
+/**************************************** FOOTER ****************************************/
+
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0 5rem 0;
+    background-color: #efefef;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    font-size: 1.5rem;
+}
+
+.back-top {
+    padding: 0 0 4rem 0;
+    color: #000;
+}
+
+#footer-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+    padding: 0 14rem;
+    color: #777;
+}
+
+.footer-section {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#footer-filler {
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
+.nav-link {
+    color: #777;
+}
+
+a:hover.nav-link {
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none;
 }
 
 /**************************************** SUBPAGE ****************************************/
@@ -514,14 +562,13 @@ ul.nav.navbar-nav {
 }
 
 /**************************************** contact form ****************************************/
-#formview {
-
-}
 
 form {
-    width: 65%;
+    display: block;
+    width: 100%;
     display: block;
     margin-top: 2rem;
+    max-width: 55rem;
 }
 
 input, textarea {
@@ -546,8 +593,8 @@ textarea {
     text-transform: uppercase;
     font-weight: 600;
     border: 0;
-    background-color: #3438D8;
-    color: #FFF;
+    background-color: #FFF;
+    color: #3438D8;
     line-height: 1em;
     padding: 0.6em 0.9em;
     margin-top: 2rem;
@@ -571,9 +618,10 @@ textarea {
   transform: translateY(-120px);
 }
 
+/**************************************** navbar ****************************************/
+
 @media all and (max-width: 888px){
 
-/**************************************** navbar ****************************************/
     .navbar-header {
         float: none;
     }
@@ -837,12 +885,46 @@ textarea {
         z-index: 1;
     }
 
+    .back-top {
+        padding: 0 0 2rem 0;
+        color: #000;
+    }
+
+    #footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 4rem;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
 }
 @media (min-width: 768px) {
     .container {
         width: inherit;
         padding: inherit;
         margin: inherit;
+    }
+}
+
+@media (max-width: 460px) {
+    #footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 4rem;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
     }
 }
 
@@ -869,6 +951,7 @@ textarea {
       font-size: 1.75rem;
     }
 }
+
 
 /********************************************************************************************************/
 
@@ -923,7 +1006,7 @@ textarea {
 }
 
 button, button:hover, .navbar-toggle:hover, .navbar-toggle.collapsed:hover {
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border: 0;
     outline: none;
 }
